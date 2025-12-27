@@ -1,7 +1,6 @@
 import nmap
-# this is a code
+
 scanner = nmap.PortScanner()
-# this is a code
 ip = "127.0.0.1"
 scanner.scan(ip, "1-1024")
 
@@ -18,5 +17,6 @@ for host in scanner.all_hosts():
         for port in ports:
             state = scanner[host][proto][port]['state']
             print(f"Port {port} → {state}")
+
 
 
