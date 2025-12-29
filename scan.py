@@ -1,8 +1,9 @@
 import nmap
-
+# import nmap 
 scanner = nmap.PortScanner()
 
-ip = "127.0.0.1"
+ip = "127.0.0.1" 
+# Effectuer un scan des ports de 1 à 1024
 scanner.scan(ip, "1-1024")
 
 print(f"Résultats du scan pour {ip} :")
